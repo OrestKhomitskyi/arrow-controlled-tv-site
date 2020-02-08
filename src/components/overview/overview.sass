@@ -1,0 +1,66 @@
+.overview-container
+    position: fixed
+    padding-top: 25px
+    transform: translateX(100vw)
+    transition: all 0.5s
+    width: 100vw
+    padding: 40px
+    top: 0
+    .title
+        color: #fff
+        font-size: 25px
+        margin-bottom: 20px
+    .movie-info
+        padding-right: 20px
+        display: flex
+        height: 90vh
+        .poster
+            padding-right: 20px
+            flex: 4
+            height: 600px
+            img
+                width: 100%
+                height: 100%
+                object-fit: contain
+                background-color: #2a2a2a
+            .action-buttons
+                display: flex
+                margin-top: 20px
+                justify-content: space-between
+                .btn
+                    border-radius: 5px
+                    width: 20%
+                    max-width: 200px
+                    border: none
+                    svg
+                        margin-right: 7px
+                    height: 70px
+                    font-size: 20px
+                    padding: 10px 25px
+                    text-transform: uppercase
+                    background-color: transparent
+                    &.selected
+                        background-color: #EF7F31
+                        color: #fff
+                        
+            .movie-characteristics
+                display: flex
+                justify-content: space-between
+                margin-bottom: 20px
+                .ch
+                    width: 30%
+                    border-top: 2px solid  #2a2a2a
+                    padding-top: 10px
+                    .key
+                        color: #484848
+                        margin-bottom: 5px
+                    .value
+                        color: #FEFEFE
+
+        .description
+            flex: 2
+            padding-left: 10px
+            color: #A0A0A0
+            font-size: 20px
+    &.active
+        transform: translateX(0vw)
